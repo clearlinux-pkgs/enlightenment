@@ -1,0 +1,7 @@
+Configure miss: CFBase.h usability
+Configure miss: CFBase.h presence
+Configure miss: CFBase.h
+Configure miss: whether the Eeze mounting support is enabled
+Configure miss: whether wayland support is enabled
+Configure miss: alsa >= 1.0.8
+Configure miss: libpulse-simple libpulse
