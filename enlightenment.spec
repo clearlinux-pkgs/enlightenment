@@ -4,10 +4,10 @@
 #
 Name     : enlightenment
 Version  : 0.22.4
-Release  : 1
+Release  : 3
 URL      : https://download.enlightenment.org/rel/apps/enlightenment/enlightenment-0.22.4.tar.xz
 Source0  : https://download.enlightenment.org/rel/apps/enlightenment/enlightenment-0.22.4.tar.xz
-Summary  : Enlightenment window manager
+Summary  : Enlightenment Window Manager
 Group    : Development/Tools
 License  : BSD-3-Clause
 Requires: enlightenment-bin = %{version}-%{release}
@@ -76,7 +76,6 @@ Requires: enlightenment-bin = %{version}-%{release}
 Requires: enlightenment-data = %{version}-%{release}
 Provides: enlightenment-devel = %{version}-%{release}
 Requires: enlightenment = %{version}-%{release}
-Requires: enlightenment = %{version}-%{release}
 
 %description dev
 dev components for the enlightenment package.
@@ -123,8 +122,9 @@ services components for the enlightenment package.
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
-export SOURCE_DATE_EPOCH=1557709694
+export LANG=C.UTF-8
+export SOURCE_DATE_EPOCH=1562866220
+export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
 export FFLAGS="$CFLAGS -fno-lto "
@@ -133,19 +133,26 @@ export CXXFLAGS="$CXXFLAGS -fno-lto "
 make  %{?_smp_mflags}
 
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1557709694
+export SOURCE_DATE_EPOCH=1562866220
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/enlightenment
 cp COPYING %{buildroot}/usr/share/package-licenses/enlightenment/COPYING
 %make_install
 %find_lang enlightenment
+## install_append content
+chmod ug-s %{buildroot}/usr/lib64/enlightenment/modules/sysinfo/linux-gnu-x86_64-0.22/cpuclock_sysfs
+chmod ug-s %{buildroot}/usr/lib64/enlightenment/modules/cpufreq/linux-gnu-x86_64-0.22/freqset
+chmod ug-s %{buildroot}/usr/lib64/enlightenment/utils/enlightenment_backlight
+chmod ug-s %{buildroot}/usr/lib64/enlightenment/utils/enlightenment_ckpasswd
+chmod ug-s %{buildroot}/usr/lib64/enlightenment/utils/enlightenment_sys
+## install_append end
 
 %files
 %defattr(-,root,root,-)

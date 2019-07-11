@@ -1,0 +1,5 @@
+chmod ug-s %{buildroot}/usr/lib64/enlightenment/modules/sysinfo/linux-gnu-x86_64-0.22/cpuclock_sysfs
+chmod ug-s %{buildroot}/usr/lib64/enlightenment/modules/cpufreq/linux-gnu-x86_64-0.22/freqset
+chmod ug-s %{buildroot}/usr/lib64/enlightenment/utils/enlightenment_backlight
+chmod ug-s %{buildroot}/usr/lib64/enlightenment/utils/enlightenment_ckpasswd
+chmod ug-s %{buildroot}/usr/lib64/enlightenment/utils/enlightenment_sys
