@@ -1,4 +1,5 @@
 libX11.so.6
+libasound.so.2
 libbluetooth.so.3
 libc.so.6
 libdl.so.2
@@ -20,8 +21,10 @@ libeina.so.1
 libeio.so.1
 libeldbus.so.1
 libelementary.so.1
+libemile.so.1
 libemotion.so.1
 libevas.so.1
 libm.so.6
 libpam.so.0
 libpthread.so.0
+libpulse.so.0

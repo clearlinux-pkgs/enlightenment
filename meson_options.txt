@@ -45,7 +45,7 @@ option('mount-eeze',
 	value: false,
 	description: 'enable eeze mounting support: (default=false)')
 
-option('wayland',
+option('wl',
 	type: 'boolean',
 	value: false,
 	description: 'enable wayland support: (default=false)')
@@ -111,6 +111,10 @@ option('bluez4',
 	type: 'boolean',
 	value: true,
 	description: 'enable bluez4 module: (default=true)')
+option('bluez5',
+	type: 'boolean',
+	value: true,
+	description: 'enable bluez5 module: (default=true)')
 option('clock',
 	type: 'boolean',
 	value: true,

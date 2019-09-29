@@ -10,8 +10,10 @@ build.log.round*
 *.tgz
 !*.tar.*.*
 *.zip
+*.jar
+*.pom
+*.xml
 commitmsg
-list
 results/
 rpms/
 for-review.txt
