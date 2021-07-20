@@ -1,4 +1,3 @@
-libX11.so.6
 libasound.so.2
 libbluetooth.so.3
 libc.so.6
@@ -15,8 +14,6 @@ libedje.so.1
 libeet.so.1
 libeeze.so.1
 libefreet.so.1
-libefreet_mime.so.1
-libefreet_trash.so.1
 libeina.so.1
 libeio.so.1
 libeldbus.so.1

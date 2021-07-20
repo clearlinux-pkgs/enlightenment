@@ -1,11 +1,6 @@
-0.23.1
-Linux-PAM-dev
-doxygen
+0.24.2
 pkgconfig(alsa)
 pkgconfig(bluez)
 pkgconfig(eeze)
-pkgconfig(libpulse)
-pkgconfig(libpulse-simple)
 pkgconfig(systemd)
-pkgconfig(xcb)
 pkgconfig(xkeyboard-config)
