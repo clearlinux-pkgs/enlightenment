@@ -1,6 +1,8 @@
-0.24.2
+0.25.0
 pkgconfig(alsa)
 pkgconfig(bluez)
 pkgconfig(eeze)
+pkgconfig(enlightenment)
+pkgconfig(libexif)
 pkgconfig(systemd)
 pkgconfig(xkeyboard-config)
