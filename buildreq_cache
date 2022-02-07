@@ -1,4 +1,4 @@
-0.25.1
+0.25.2
 pkgconfig(alsa)
 pkgconfig(bluez)
 pkgconfig(eeze)
