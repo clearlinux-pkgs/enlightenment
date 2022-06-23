@@ -4,7 +4,7 @@
 #
 Name     : enlightenment
 Version  : 0.25.3
-Release  : 11
+Release  : 12
 URL      : https://download.enlightenment.org/rel/apps/enlightenment/enlightenment-0.25.3.tar.xz
 Source0  : https://download.enlightenment.org/rel/apps/enlightenment/enlightenment-0.25.3.tar.xz
 Summary  : Everything Module for Enlightenment
@@ -120,7 +120,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1644511319
+export SOURCE_DATE_EPOCH=1656022270
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -145,7 +145,7 @@ chmod ug-s %{buildroot}/usr/lib64/enlightenment/utils/enlightenment_backlight  |
 chmod ug-s %{buildroot}/usr/lib64/enlightenment/utils/enlightenment_ckpasswd  || :
 chmod ug-s %{buildroot}/usr/lib64/enlightenment/utils/enlightenment_sys  || :
 ## install_append end
-/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot}/usr/share/clear/optimized-elf/ %{buildroot}/usr/share/clear/filemap/filemap-%{name}
+/usr/bin/elf-move.py avx2 %{buildroot}-v3 %{buildroot} %{buildroot}/usr/share/clear/filemap/filemap-%{name}
 
 %files
 %defattr(-,root,root,-)
@@ -286,6 +286,14 @@ chmod ug-s %{buildroot}/usr/lib64/enlightenment/utils/enlightenment_sys  || :
 /usr/lib64/enlightenment/utils/enlightenment_system
 /usr/lib64/enlightenment/utils/enlightenment_thumb
 /usr/lib64/enlightenment/utils/enlightenment_wallpaper_gen
+/usr/lib64/glibc-hwcaps/x86-64-v3/batget
+/usr/lib64/glibc-hwcaps/x86-64-v3/enlightenment_alert
+/usr/lib64/glibc-hwcaps/x86-64-v3/enlightenment_elm_cfgtool
+/usr/lib64/glibc-hwcaps/x86-64-v3/enlightenment_fm
+/usr/lib64/glibc-hwcaps/x86-64-v3/enlightenment_fm_op
+/usr/lib64/glibc-hwcaps/x86-64-v3/enlightenment_thumb
+/usr/lib64/glibc-hwcaps/x86-64-v3/enlightenment_wallpaper_gen
+/usr/lib64/glibc-hwcaps/x86-64-v3/upload
 
 %files bin
 %defattr(-,root,root,-)
@@ -756,7 +764,28 @@ chmod ug-s %{buildroot}/usr/lib64/enlightenment/utils/enlightenment_sys  || :
 /usr/lib64/enlightenment/modules/wizard/linux-gnu-x86_64-0.25.3/page_180.so
 /usr/lib64/enlightenment/modules/wizard/linux-gnu-x86_64-0.25.3/page_200.so
 /usr/lib64/enlightenment/modules/xkbswitch/linux-gnu-x86_64-0.25.3/module.so
-/usr/share/clear/optimized-elf/lib*
+/usr/lib64/glibc-hwcaps/x86-64-v3/module.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_000.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_010.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_011.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_020.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_030.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_040.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_050.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_060.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_070.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_080.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_090.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_100.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_110.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_115.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_120.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_130.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_150.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_160.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_170.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_180.so
+/usr/lib64/glibc-hwcaps/x86-64-v3/page_200.so
 
 %files license
 %defattr(0644,root,root,0755)
