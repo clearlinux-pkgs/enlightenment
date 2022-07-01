@@ -4,7 +4,7 @@
 #
 Name     : enlightenment
 Version  : 0.25.3
-Release  : 13
+Release  : 14
 URL      : https://download.enlightenment.org/rel/apps/enlightenment/enlightenment-0.25.3.tar.xz
 Source0  : https://download.enlightenment.org/rel/apps/enlightenment/enlightenment-0.25.3.tar.xz
 Summary  : Everything Module for Enlightenment
@@ -120,7 +120,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1656104498
+export SOURCE_DATE_EPOCH=1656712849
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
@@ -756,6 +756,7 @@ chmod ug-s %{buildroot}/usr/lib64/enlightenment/utils/enlightenment_sys  || :
 /usr/lib64/enlightenment/modules/wizard/linux-gnu-x86_64-0.25.3/page_180.so
 /usr/lib64/enlightenment/modules/wizard/linux-gnu-x86_64-0.25.3/page_200.so
 /usr/lib64/enlightenment/modules/xkbswitch/linux-gnu-x86_64-0.25.3/module.so
+/usr/share/clear/optimized-elf/other*
 
 %files license
 %defattr(0644,root,root,0755)
