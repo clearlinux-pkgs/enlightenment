@@ -4,7 +4,7 @@
 #
 Name     : enlightenment
 Version  : 0.25.4
-Release  : 19
+Release  : 20
 URL      : https://download.enlightenment.org/rel/apps/enlightenment/enlightenment-0.25.4.tar.xz
 Source0  : https://download.enlightenment.org/rel/apps/enlightenment/enlightenment-0.25.4.tar.xz
 Summary  : Everything Module for Enlightenment
